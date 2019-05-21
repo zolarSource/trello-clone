@@ -1,0 +1,44 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm i --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "proxy": "http://localhost:5000",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "prop-types": "^15.6.2",
+    "react-test-renderer": "^16.5.2",
+    "redux-devtools-extension": "^2.13.8"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "event-emitter": "^0.3.5",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.5.4",
+    "path-to-regexp": "^3.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-google-login": "^5.0.4",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-test-renderer": "^16.5.2",
+    "redux": "^4.0.1",
+    "redux-act": "^1.7.4",
+    "redux-thunk": "^2.3.0",
+    "validator": "^10.11.0"
+  }
+}

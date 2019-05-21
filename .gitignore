@@ -1,0 +1,8 @@
+# nodemodules
+node_modules
+
+# client nodemodules
+client/node_modules/
+
+# client src
+client/src
